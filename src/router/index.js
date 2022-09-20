@@ -7,12 +7,6 @@ import AxiosTriviaQuiz from '../views/AxiosTriviaQuiz.vue'
 import AboutVuetify from '../views/AboutVuetify.vue'
 import Register from '../views/Register.vue'
 import SignIn from '../views/SignIn.vue'
-
-import Start from '../views/quiz/Start.vue'
-import Game from '../views/quiz/Game.vue'
-import Results from '../views/quiz/Results.vue'
-import Import from '../views/quiz/Import.vue'
-
 import Score from '../views/Scores.vue'
 
 
@@ -52,39 +46,6 @@ const router = createRouter({
       path: '/home',
       name: 'home',
       component: HomeView,
-      meta:{
-        requiresAuth: true,
-      },
-    },
-
-    {
-      path: '/start',
-      name: 'start',
-      component: Start,
-      meta:{
-        requiresAuth: true,
-      },
-    },
-    {
-      path: '/game',
-      name: 'game',
-      component: Game,
-      meta:{
-        requiresAuth: true,
-      },
-    },
-    {
-      path: '/results',
-      name: 'results',
-      component: Results,
-      meta:{
-        requiresAuth: true,
-      },
-    },
-    {
-      path: '/import',
-      name: 'import',
-      component: Import,
       meta:{
         requiresAuth: true,
       },
