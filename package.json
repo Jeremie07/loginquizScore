@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "scripts": {
     "serve": "vite preview",
-    "build": "vite build",
+    "build": "CI= vite build",
     "dev": "vite",
     "preview": "vite preview --port 4173"
   },
