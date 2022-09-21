@@ -19,7 +19,7 @@
             </section>
             <section v-else>
               <section class="quiz" v-if="!quizCompleted">
-                <img id="logo-crown" src="https://i.ibb.co/HKj6V6C/pngegg-1.png" class="height:10px;width:10px;"
+                <img id="logo-crown" src="https://media.baamboozle.com/uploads/images/336767/1645422278_293033_gif-url.gif" class="height:10px;width:10px;"
                   alt="Quiz" />
                 <center>
                   <h1 id="headline">Quiz Application - Geography</h1>

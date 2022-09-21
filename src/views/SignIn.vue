@@ -91,14 +91,13 @@ const router = useRouter();
 const signInWithGoogle = async(e) => {
      const auth = getAuth();
     signInWithPopup(auth, provider)
-        .then((result) => {
-            // This gives you a Google Access Token. You can use it to access the Google API.
-            const credential = GoogleAuthProvider.credentialFromResult(result);
-            const token = credential.accessToken;
-            // The signed-in user info.
-            const user = result.user;
-            // ...
-        }).catch((error) => {
+        .then((data) => {
+            console.log("Successfully Sign In!");
+
+            console.log(auth.currentUser)
+            router.push('/axiosQuiz')
+        })
+        .catch((error) => {
             // Handle Errors here.
             const errorCode = error.code;
             const errorMessage = error.message;
